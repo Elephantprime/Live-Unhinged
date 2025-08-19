@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day 03 — Multimodal Prompts</title>
+<style>
+  :root{--bd:#e6e8ec;--mut:#5b5f6a;--hi:#59e38d;--hi2:#46a2ff}
+  *{box-sizing:border-box}html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:#0e0f13}
+  .header{position:sticky;top:0;background:#ffffffd9;backdrop-filter:blur(6px);border-bottom:1px solid var(--bd)}
+  .nav{max-width:1100px;margin:0 auto;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
+  .brand{font-weight:800} .nav a{margin-left:16px;text-decoration:none;color:#0e0f13}
+  .wrap{max-width:1100px;margin:0 auto;padding:18px 16px}
+  .card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:16px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--bd);background:#fff;font-weight:600;text-decoration:none;color:#0e0f13}
+  .btn.accent{background:linear-gradient(90deg,var(--hi),var(--hi2));color:#031015;border:none}
+  .hr{height:1px;background:var(--bd);margin:14px 0}
+  .note{color:var(--mut)} pre{white-space:pre-wrap;background:#fafbff;border:1px solid var(--bd);padding:12px;border-radius:10px}
+</style>
+</head><body>
+<header class="header"><div class="nav">
+  <a class="brand" href="../index.html">← AI Certified</a>
+  <nav><a href="../../../pages/shop.html">Shop</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="card">
+    <h1>Day 03 — Multimodal Prompts</h1>
+    <p class="note">Combine text with image/audio/video constraints and inputs.</p>
+  </section>
+
+  <section class="card">
+    <h2>Objectives</h2>
+    <ul>
+      <li>Grasp the principle for today and when to use it.</li>
+      <li>Practice with guided prompts until output is consistent.</li>
+      <li>Ship one artifact (saved to your portfolio folder).</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Playbook</h2>
+    <ol>
+      <li><strong>Frame:</strong> set ROLE, AUDIENCE, OUTCOME.</li>
+      <li><strong>Constrain:</strong> measurable specs (length, format, style, ratios).</li>
+      <li><strong>Example:</strong> give one “gold” example to anchor quality.</li>
+      <li><strong>Critique:</strong> have the model self‑critique → revise.</li>
+      <li><strong>Export:</strong> deliver in required format (Markdown/JSON/PNG/MP4).</li>
+    </ol>
+  </section>
+
+  <section class="card">
+    <h2>Copy‑Paste Prompts</h2>
+    <pre><code>SYSTEM: You are a precise assistant. If constraints are missing, ask clarifying questions.
+USER: Create a {deliverable} for {audience} about {topic}.
+Constraints: {length / format / tone / acceptance criteria}
+Include: a brief rationale and a numbered outline.
+Deliver as: {markdown | json | bulleted list}.</code></pre>
+  </section>
+
+  <section class="card">
+    <h2>Demo</h2>
+    <p>Generate a one‑page brief on “Multimodal Prompts” with KPIs. Convert it into a 5‑slide outline.</p>
+  </section>
+
+  <section class="card">
+    <h2>Deliverable Checklist</h2>
+    <ul>
+      <li>Meets constraints exactly.</li>
+      <li>Includes self‑critique → revision step.</li>
+      <li>Exported clearly and saved with date stamp.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Stretch</h2>
+    <ul>
+      <li>Reduce time‑to‑result by 20% without losing quality.</li>
+      <li>Swap target audience and regenerate.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="wrap"><div class="hr"></div><p class="note">© 2025 Live Unhinged</p></footer>
+</body></html>
