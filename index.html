@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============ META ============ -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Unhinged — I Am The Standard</title>
+  <meta name="description" content="Dating, AI, books, and merch — unfiltered skills that actually help you win." />
+
+  <!-- Optional external stylesheet (add later if you want) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- ======= Minimal inline styles so this looks good even without style.css ======= -->
+  <style>
+    :root{
+      --bg:#0b0b0c; --surface:#ffffff; --text:#0e0f13; --muted:#5b5f6a;
+      --border:#e6e8ec; --accent:#59e38d; --accent2:#46a2ff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#f7f8fb;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    /* Header */
+    .header{position:sticky;top:0;z-index:10;background:#ffffffc7;backdrop-filter:blur(6px);border-bottom:1px solid var(--border)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .nav a{margin-left:16px;color:#1d212b}
+    .nav a:hover{opacity:.75}
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:32px 0}
+    .hero h1{font-size:44px;line-height:1.05;margin:0 0 8px}
+    .note{color:var(--muted);font-size:14px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:#fff;font-weight:600}
+    .btn.accent{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#031015;border:none}
+    .btn.ghost{background:#fff}
+    .hero img{width:100%;border-radius:14px;border:1px solid var(--border)}
+    /* Section headings */
+    section h2{margin:0 0 12px}
+    /* Product grid */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;display:flex;flex-direction:column;box-shadow:0 4px 10px rgba(17,20,24,.06)}
+    .card img{width:100%;border-radius:10px;border:1px solid var(--border);margin-bottom:10px;object-fit:cover;height:160px}
+    .card h3{margin:6px 0 6px;font-size:18px}
+    .tagline{color:var(--muted);font-size:14px}
+    .price{font-weight:800;margin:10px 0}
+    .card .actions{margin-top:auto}
+    /* Blog preview */
+    .post{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px}
+    /* Footer */
+    .footer{border-top:1px solid var(--border);margin-top:32px}
+    .footer .container{padding:14px 16px}
+    @media (max-width:860px){ .hero{grid-template-columns:1fr} }
+  </style>
+
+  <!-- Analytics placeholders (leave commented until you add keys) -->
+  <!-- <script>/* GA here */</script> -->
+  <!-- <script>/* Meta Pixel here */</script> -->
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Live Unhinged</a>
+      <nav>
+        <a href="pages/about.html">About</a>
+        <a href="pages/shop.html">Shop</a>
+        <a href="pages/books.html">Books</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="pages/subscribe.html">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+  <!-- =============== END HEADER =============== -->
+
+  <!-- ================= HERO =================== -->
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="note">Personal Brand Hub</div>
+        <h1>I Am The Standard</h1>
+        <p>Real skills. Real talk. Real results — without the corporate fluff.</p>
+        <div class="actions">
+          <a class="btn accent" href="pages/shop.html">Shop & Programs</a>
+          <a class="btn ghost" href="pages/subscribe.html">Subscribe</a>
+        </div>
+      </div>
+      <div>
+        <img src="assets/img/hero.jpg" alt="Hero Image (replace assets/img/hero.jpg)" />
+      </div>
+    </section>
+  </main>
+  <!-- ================ END HERO ================ -->
+
+  <!-- ============ FEATURED PRODUCTS =========== -->
+  <section class="container">
+    <h2>Our Products</h2>
+    <!-- If you want plug‑and‑play, keep the empty grid and load from /data/products.json via assets/js/app.js -->
+    <div id="products-grid" class="grid"></div>
+
+    <!-- TEMP EXAMPLE CARD (delete once products.json is wired) -->
+    <div class="grid" id="example-products">
+      <div class="card">
+        <img src="assets/img/self-delusion.jpg" alt="The Self-Delusion Workbook (add image at assets/img/self-delusion.jpg)">
+        <h3>The Self‑Delusion Workbook</h3>
+        <p class="tagline">Stop saying “I’m fine” — and actually mean it. A petty, healing workbook for reclaiming your peace.</p>
+        <div class="price">$9</div>
+        <div class="actions">
+          <a class="btn accent" href="#" target="_blank" rel="noopener">Buy Now</a>
+          <a class="btn" href="pages/self-delusion.html">Details</a>
+        </div>
+      </div>
+    </div>
+    <!-- ========= END TEMP EXAMPLE CARD ========= -->
+  </section>
+  <!-- ========= END FEATURED PRODUCTS ========== -->
+
+  <!-- =============== BLOG PREVIEW ============= -->
+  <section class="container" style="margin-top:26px">
+    <h2>Latest Posts</h2>
+    <div id="posts-list" class="grid">
+      <!-- TEMP example post (remove after posts.json is wired) -->
+      <div class="post">
+        <div class="note">Post</div>
+        <h3>Welcome to Live Unhinged</h3>
+        <p class="note">Why this exists: unfiltered truth, real skills, zero fluff.</p>
+      </div>
+    </div>
+  </section>
+  <!-- ============= END BLOG PREVIEW =========== -->
+
+  <!-- ================ FOOTER ================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="note">© 2025 Live Unhinged</p>
+    </div>
+  </footer>
+  <!-- =============== END FOOTER =============== -->
+
+  <!-- Optional: plug‑and‑play rendering (add these files later) -->
+  <!-- <script src="assets/js/app.js"></script> -->
+</body>
+</html>
